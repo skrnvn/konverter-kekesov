@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form action="get">
+            <select name="currencyName" id="currencyName">
+                <option value="rub">
+                    RUB
+                </option>
+                <option value="eur">
+                    EUR
+                </option>
+                <option value="usd">
+                    USD
+                </option>
+            </select>
+            <input type="text" name="currency-inner" id="currency-inner">
+            <input type="text" name="currency-outer" id="currency-outer" readonly="readonly">
+            <button onclick="calculateRate()" type="button">
+                Батон
+            </button>
+        </form>
+    </section>
+    <script src="/index.js"></script>
+</body>
+</html>
